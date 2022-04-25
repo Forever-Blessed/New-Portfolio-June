@@ -280,7 +280,8 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 858px) {
 
 .navBar {
-  display: none;
+  display: block;
+  height: 18em;
 }  
 
 .navigation {
@@ -291,11 +292,9 @@ input[type="submit"]:hover {
   text-align: center;
   left: 0vw;
   top: 3.5em; 
+  z-index: 99;
   }
 
-  .NavBar {
-    height: 18em;
-  }
 
   .introdiv {
     display: flex;
@@ -321,6 +320,7 @@ input[type="submit"]:hover {
   
   .hero-image {
 display: flex;
+z-index: 0;
   }
 
 
@@ -350,6 +350,7 @@ display: flex;
   }
   
   .contactform {
+    display: flex;
     margin: 2em 1vw;
     padding: 1em;
     background-color:gainsboro;
@@ -364,6 +365,7 @@ display: flex;
   .maincontent {
     padding: 0vw;
   }
+
   }
 
 
