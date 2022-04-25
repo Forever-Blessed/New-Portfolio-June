@@ -9,10 +9,13 @@ body {
 
 .Newsbanner {
 display: flex;
-height: 1em;
+min-height: 2.5%;
 background-color: black;
 color: white;
 justify-content: center;
+position: fixed; /* Set the navbar to fixed position */
+top: 2.5; /* Position the navbar at the top of the page */
+width: 100%;
 }
 
 .Bannertext {
@@ -22,6 +25,9 @@ justify-content: center;
 .NavBar {
   height: 3.5em;
   justify-content: left;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 2.5%; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 nav{
@@ -49,7 +55,8 @@ nav ul {
 nav ul li{
   display: inline-block;
   line-height:3em;
-  margin: 0 5px;
+  margin: auto 5px;
+  margin: 3px;
 }
 
 nav ul li a{
@@ -141,8 +148,8 @@ height: 100%;
 
 .VSCimage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("visualstudiocode.png");
-  width: 40rem;
-  height: 30rem;
+  /*width: 40em;*/
+  height: 30em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,13 +168,6 @@ height: 100%;
   margin: 1em 7em;
 }
 
-.contactform {
-  margin: 2em 5vw;
-  background-color:gainsboro;
-  border-radius: 1em;
-  height: 20em;
-}
-
 .aboutmetext {
   margin: 2vw;
   margin-right: 4vw;
@@ -183,6 +183,8 @@ height: 100%;
   max-width: 20em;
   border-radius: 1em;
   margin: 2.5em auto;
+  margin-right: 2.5em;
+  margin-left: 2.5em;
   text-align: center;
   align-items: center;
 }
@@ -215,9 +217,72 @@ height: 100%;
   margin-left: 40%;
 }
 
+/* This is the contact form stuff */
+
+.contactform {
+  display: flex;
+  margin: 2em 5vw;
+  background-color:gainsboro;
+  border-radius: 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactheader {
+  display: block;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  border-radius: 6px;
+  margin: 30px 30px;
+  background-color: #274471;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+
+#contactForm {
+  padding: 3em;
+  width: 75vw;
+}
+
+.h1cf {
+  margin-top: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+[type="submit"],
+textarea {
+  width: 80%;
+  padding: 10px 16px 10px 16px;
+  margin: 8px auto;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: #1ac0f3;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #76b841;
+}
+/* This is the contact form stuff */
+
+
 @media only screen and (max-width: 858px) {
 
-  
+.navBar {
+  display: none;
+}  
+
 .navigation {
   position: absolute;
   width: 100vw;
