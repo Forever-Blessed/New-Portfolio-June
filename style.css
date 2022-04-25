@@ -320,7 +320,6 @@ input[type="submit"]:hover {
   
   .hero-image {
 display: flex;
-z-index: 0;
   }
 
 
